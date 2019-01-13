@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !\.(jpg|jpeg|gif|png|css|js|pl|txt|otf|ttf|eot|woff|woff2|svg)$
+RewriteRule ^(.*)$ index.php?uri=$1 [QSA]
+</IfModule>
